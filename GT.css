@@ -1,0 +1,94 @@
+.welcome-section {
+  text-align: center;
+  background-color: #f9f5f3; /* Màu nền nhẹ */
+  padding: 50px 20px;
+}
+
+.welcome-section h1 {
+  color: #a02424; /* Màu đỏ đậm */
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.welcome-section h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #a02424;
+  margin: 5px auto 0;
+}
+
+.welcome-section p {
+  font-size: 1.1em;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 23px;
+}
+
+/* --- TIÊU ĐỀ "ĐẶC ĐIỂM NỔI BẬT" --- */
+.highlight-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f9f5f3; /* Màu nền khác một chút */
+}
+
+.highlight-section h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #8b0000;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Gạch dưới tiêu đề */
+.highlight-section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #8b0000;
+  margin: 8px auto 0;
+}
+
+/* --- DANH SÁCH ĐIỂM NỔI BẬT --- */
+.highlight-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Định dạng từng mục */
+.highlight-list span {
+  font-size: 20px;
+  color: #333;
+  padding: 5px 10px;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Thêm dấu phân cách '|' giữa các mục */
+.highlight-list span:not(:last-child)::after {
+  content: " | ";
+  color: #8b0000;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.imgGT img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+}
